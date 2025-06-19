@@ -71,6 +71,7 @@ use bevy_ecs::{
 use bevy_utils::{synccell::SyncCell, syncunsafecell::SyncUnsafeCell};
 // Reexport everything from steamworks except for the clients
 pub use steamworks::{
+    ClientManager,
     networking_types::NetworkingIdentity, networking_types,
     networking_messages, networking_sockets, networking_utils, restart_app_if_necessary, AccountId,
     AppIDs, AppId, Apps, AuthSessionError, AuthSessionTicketResponse, AuthSessionValidateError,
