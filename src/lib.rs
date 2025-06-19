@@ -73,6 +73,7 @@ use bevy_utils::{synccell::SyncCell, syncunsafecell::SyncUnsafeCell};
 // Reexport everything from steamworks except for the clients
 use steamworks::networking_types::NetConnectionStatusChanged;
 pub use steamworks::{
+    networking_types::NetworkingIdentity,
     networking_messages, networking_sockets, networking_types, networking_utils,
     restart_app_if_necessary, stats, AccountId, AppIDs, AppId, Apps, AuthSessionError,
     AuthSessionTicketResponse, AuthSessionValidateError, AuthTicket, Callback, CallbackHandle,
