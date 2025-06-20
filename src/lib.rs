@@ -109,6 +109,7 @@ struct SteamEvents {
 pub enum SteamworksEvent {
     AuthSessionTicketResponse(steamworks::AuthSessionTicketResponse),
     DownloadItemResult(steamworks::DownloadItemResult),
+    LobbyDataUpdate(steamworks::LobbyDataUpdate),
     GameLobbyJoinRequested(steamworks::GameLobbyJoinRequested),
     LobbyChatUpdate(steamworks::LobbyChatUpdate),
     P2PSessionConnectFail(steamworks::P2PSessionConnectFail),
@@ -208,6 +209,7 @@ impl Plugin for SteamworksPlugin {
                 DownloadItemResult,
                 GameLobbyJoinRequested,
                 LobbyChatUpdate,
+                LobbyDataUpdate,
                 P2PSessionConnectFail,
                 P2PSessionRequest,
                 PersonaStateChange,
